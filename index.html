@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Trabalho14</title>
+</head>
+
+<style>
+ h1 {font-size: 40px;font-family: Arial;color: rgb(163, 95, 209);text-align: center;margin-bottom: 30px;}
+ p  {font-size: 20px;font-family: Arial;color:black;;margin-bottom: 30px;}
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+h2 {font-size: 20px;font-family: Arial;}
+
+.input-fatorial  {width: 30px;}
+</style>
+ 
+<body>
+ <h1>Sequências Mágicas</h1>
+
+
+<h2>Quantos Números Quer Incluir na Sua Resposta? <button onclick="calcular10()" id="botao-dez"> 10</button> <button onclick="calcular100()" id="botao-cem"> 100  </button><button onclick="calcular1000()" id="botao-mil"> 1000  </button><button onclick="calcular10000()" id="botao-dez-mil"> 10000  </button><button onclick="calcular100000()" id="botao-cem-mil">  100000 </button><button onclick="calcular1000000()" id="botao-um-milhão">  1000000 </button></h2>
+
+<table style="width: 80%; margin: 0 auto; font-family: Arial; font-size: 14px; text-align: center;">
+<tr style="height: 50px;">
+<th>Números Naturais</th>
+<th>Números Pares</th>
+<th>Números Ímpares</th>
+<th>Múltiplos de 3</th>
+<th>Divisores de 12</th>
+<th>Fatorial &nbsp; <input min="0" type="number" id="numero-fatorial" placeholder="n" class="input-fatorial"></th>
+</tr>
+<tr>
+<td style="width: 13%; vertical-align: top;" id="tabela-1"></td>
+<td style="width: 13%;vertical-align: top;" id="tabela-2"></td>
+<td style="width: 13%;vertical-align: top;" id="tabela-3"></td>
+<td style="width: 13%;vertical-align: top;" id="tabela-4"> </td>
+<td style="width: 13%;vertical-align: top;" id="tabela-5"></td>
+<td style="width: 13%;vertical-align: top;" id="tabela-6"> </td>
+</tr>
+</table>
+
+
+ 
+<script>
+
+function calcular10() { 
+
+let naturais = "Os Números São:<br>";
+let pares = "Os Números São:<br>";
+let impares = "Os Números São:<br>";
+let multiplos3 = "Os Números São:<br>";
+
+for (let i = 0; i <= 10; i++) {
+  naturais += i + "<br>";
+}
+
+for (let i = 0; i <= 20; i++) {
+  if (i % 2 === 0) pares += i + "<br>";
+}
+
+for (let i = 0; i <= 21; i++) {
+  if (i % 2 !== 0) impares += i + "<br>";
+}
+
+for (let i = 0; i <= 30; i++) {
+  if (i % 3 === 0) multiplos3 += i + "<br>";
+}
+
+document.getElementById("tabela-1").innerHTML = naturais;
+document.getElementById("tabela-2").innerHTML = pares;
+document.getElementById("tabela-3").innerHTML = impares;
+document.getElementById("tabela-4").innerHTML = multiplos3;
+}
+
+
+function calcular100() { 
+
+let naturais = "Os Números São:<br>";
+let pares = "Os Números São:<br>";
+let impares = "Os Números São:<br>";
+let multiplos3 = "Os Números São:<br>";
+
+for (let i = 0; i <= 100; i++) {
+  naturais += i + "<br>";
+}
+
+for (let i = 0; i <= 200; i++) {
+  if (i % 2 === 0) pares += i + "<br>";
+}
+
+for (let i = 0; i <= 201; i++) {
+  if (i % 2 !== 0) impares += i + "<br>";
+}
+
+for (let i = 0; i <= 300; i++) {
+  if (i % 3 === 0) multiplos3 += i + "<br>";
+}
+
+document.getElementById("tabela-1").innerHTML = naturais;
+document.getElementById("tabela-2").innerHTML = pares;
+document.getElementById("tabela-3").innerHTML = impares;
+document.getElementById("tabela-4").innerHTML = multiplos3;
+}
+
+function calcular1000() { 
+
+let naturais = "Os Números São:<br>";
+let pares = "Os Números São:<br>";
+let impares = "Os Números São:<br>";
+let multiplos3 = "Os Números São:<br>";
+
+for (let i = 0; i <= 1000; i++) {
+  naturais += i + "<br>";
+}
+
+for (let i = 0; i <= 2000; i++) {
+  if (i % 2 === 0) pares += i + "<br>";
+}
+
+for (let i = 0; i <= 2001; i++) {
+  if (i % 2 !== 0) impares += i + "<br>";
+}
+
+for (let i = 0; i <= 3000; i++) {
+  if (i % 3 === 0) multiplos3 += i + "<br>";
+}
+
+document.getElementById("tabela-1").innerHTML = naturais;
+document.getElementById("tabela-2").innerHTML = pares;
+document.getElementById("tabela-3").innerHTML = impares;
+document.getElementById("tabela-4").innerHTML = multiplos3;
+}
+
+function calcular10000() { 
+
+let naturais = "Os Números São:<br>";
+let pares = "Os Números São:<br>";
+let impares = "Os Números São:<br>";
+let multiplos3 = "Os Números São:<br>";
+
+for (let i = 0; i <= 10000; i++) {
+  naturais += i + "<br>";
+}
+
+for (let i = 0; i <= 20000; i++) {
+  if (i % 2 === 0) pares += i + "<br>";
+}
+
+for (let i = 0; i <= 20001; i++) {
+  if (i % 2 !== 0) impares += i + "<br>";
+}
+
+for (let i = 0; i <= 30000; i++) {
+  if (i % 3 === 0) multiplos3 += i + "<br>";
+}
+
+document.getElementById("tabela-1").innerHTML = naturais;
+document.getElementById("tabela-2").innerHTML = pares;
+document.getElementById("tabela-3").innerHTML = impares;
+document.getElementById("tabela-4").innerHTML = multiplos3;
+}
+
+
+function calcular100000() { 
+
+let naturais = "Os Números São:<br>";
+let pares = "Os Números São:<br>";
+let impares = "Os Números São:<br>";
+let multiplos3 = "Os Números São:<br>";
+
+for (let i = 0; i <= 100000; i++) {
+  naturais += i + "<br>";
+}
+
+for (let i = 0; i <= 200000; i++) {
+  if (i % 2 === 0) pares += i + "<br>";
+}
+
+for (let i = 0; i <= 200001; i++) {
+  if (i % 2 !== 0) impares += i + "<br>";
+}
+
+for (let i = 0; i <= 300000; i++) {
+  if (i % 3 === 0) multiplos3 += i + "<br>";
+}
+
+document.getElementById("tabela-1").innerHTML = naturais;
+document.getElementById("tabela-2").innerHTML = pares;
+document.getElementById("tabela-3").innerHTML = impares;
+document.getElementById("tabela-4").innerHTML = multiplos3;
+}
+
+
+
+function calcular1000000() { 
+
+let naturais = "Os Números São:<br>";
+let pares = "Os Números São:<br>";
+let impares = "Os Números São:<br>";
+let multiplos3 = "Os Números São:<br>";
+
+for (let i = 0; i <= 1000000; i++) {
+  naturais += i + "<br>";
+}
+
+for (let i = 0; i <= 2000000; i++) {
+  if (i % 2 === 0) pares += i + "<br>";
+}
+
+for (let i = 0; i <= 2000001; i++) {
+  if (i % 2 !== 0) impares += i + "<br>";
+}
+
+for (let i = 0; i <= 3000000; i++) {
+  if (i % 3 === 0) multiplos3 += i + "<br>";
+}
+
+document.getElementById("tabela-1").innerHTML = naturais;
+document.getElementById("tabela-2").innerHTML = pares;
+document.getElementById("tabela-3").innerHTML = impares;
+document.getElementById("tabela-4").innerHTML = multiplos3;
+}
+
+
+
+
+
+let text4 = "Os Números São: <br>"
+let l = 1;
+ 
+do {      if (12 % l === 0)                                   
+  text4 += "<br>" + l;
+l++;
+}
+while (l <= 12);  
+ 
+document.getElementById("tabela-5").innerHTML = text4;
+
+document.getElementById("numero-fatorial").addEventListener("input", function() {
+var x = parseInt(document.getElementById("numero-fatorial").value);
+
+let text5 = ""
+let resultado = 1;
+ 
+if (x === 0) {
+  resultado = 1; } else {
+    let p = 1; 
+            do {
+                resultado *= p;
+                p++;
+            } while (p <= x);
+        }
+                                       
+  text5 += "O número é " + resultado
+
+
+
+ 
+document.getElementById("tabela-6").innerHTML = text5;})
+
+
+
+
+
+
+
+
+
+</script>
+</body>
